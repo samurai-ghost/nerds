@@ -1,160 +1,161 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Каталог — Нёрдс</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Каталог — Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body>
-    
-    <header>
-      <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"></a>
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+<body>
+  <header>
+    <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"></a>
+    <ul>
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Клиенты</a></li>
+      <li><a>Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <a href="#">Корзина</a>
+  </header>
+
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+    <section>
+      <h2>Фильтр шаблонов</h2>
+      <form action="https://echo.html.academy.ru" method="post"></form>
+
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <input type="range" id="priceslider" min="0" max="15000" step="1">
+        <label>От <input type="text" value="0" name="cost"></label>
+        <label>До <input type="text" value="15000" name="cost"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li>
+          <input type="radio" value="adaptive" name="grid">
+          <label>Адаптивная</label>
+        </li>
+        <li>
+          <input type="radio" value="fixed" name="grid">
+          <label>Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" value="rubber" name="grid">
+          <label>Резиновая</label>
+        </li>
       </ul>
-      <a href="#">Корзина</a>
-    </header>
-
-    <main>
-      <h1>Магазин готовых шаблонов</h1>
-      <section>
-        <h2>Фильтр шаблонов</h2>
-        <form action="https://echo.html.academy.ru" method="post"></form>
-
-        <fieldset>
-          <legend>Стоимость:</legend>
-          <input type="range" id="priceslider" min="0" max="15000" step="1">
-          <label>От <input type="text" value="0" name="cost"></label>
-          <label>До <input type="text" value="15000" name="cost"></label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Сетка:</legend>
-          <ul>
-            <li>
-            <input type="radio" value="adaptive" name="grid">
-            <label>Адаптивная</label>
-          </li>
-          <li>
-            <input type="radio" value="fixed" name="grid">
-            <label>Фиксированная</label>
-          </li>
-          <li>
-            <input type="radio" value="rubber" name="grid">
-            <label>Резиновая</label>
-          </li>
-        </ul>
-        </fieldset>
-         
-        <fieldset>
-          <legend>Особенности:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" value="slider" name="features" checked>
-              <label>Слайдер</label>
-            </li>
-            <li>
-              <input type="checkbox" value="advantages" name="features">
-              <label>Блок преимуществ</label>
-            </li>
-          <li>
-            <input type="checkbox"  value="news" name="features"cheked>
-            <label>Новости</label>
-          </li>
-          <li>
-            <input type="checkbox"  value="galery" name="features">
-            <label>Галерея</label>
-          </li>
-          <li>
-            <input type="checkbox"  value="basket" name="features">
-            <label>Корзина</label>
-          </li>
-        </ul>
-        </fieldset>
-        <button type="submit">Показать</button>
-      </section>   
-      
-      <section>
-        <p>Сортировать:</p>
-        <ul>
-          <li><a>По цене</a></li>
-          <li><a>По типу</a></li>
-          <li><a>По названию</a></li>
-          <li><a>По направлению вверх</a></li>
-          <li><a>По направлению вниз</a></li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Товары</h2>
+      </fieldset>
+        
+      <fieldset>
+        <legend>Особенности:</legend>
         <ul>
           <li>
-            <h3><a href="#">Sedona</a</h3>
-            <p>Информационный сайт для туристов</p>
-            <a href="#">9 900 ₽</a>
-            <img src="img/catalog/SEDONA.png" alt="Скриншот сайта для туристов Sedona">
+            <input type="checkbox" value="slider" name="features" checked>
+            <label>Слайдер</label>
           </li>
           <li>
-            <h3><a href="#">Pink App</a</h3>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#">9 900 ₽</a>
-            <img src="img/catalog/Pink.png" alt="Скриншот продуктового лендинга Pink App">
+            <input type="checkbox" value="advantages" name="features">
+            <label>Блок преимуществ</label>
           </li>
-          <li>
-            <h3><a href="#">Barbershop Borodinski</a</h3>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a href="#">9 900 ₽</a>
-            <img src="img/catalog/BORODINSKI.png" alt="Скриншот сайта барбершопа Borodinski">
-          </li>
-          <li>
-            <h3><a href="#">MISHKA</a</h3>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a href="#">9 900 ₽</a>
-            <img src="img/catalog/Mishka.png" alt="Скриншот интернет-магазина вязаных игрушек MISHKA">
-          </li>
-          <li>
-            <h3><a href="#">A Plus</a</h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a href="#">9 900 ₽</a>
-            <img src="img/catalog/A Plus.png" alt="Скриншот лендинга повышения квалификации A Plus">
-          </li>
-          <li>
-            <h3><a href="#">КВАСТ</a</h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="#">9 900 ₽</a>
-            <img src="img/catalog/КВАСТ.png" alt="Скриншот промо-сайта крафтового кваса КВАСТ">
-          </li>
-        </ul>
+        <li>
+          <input type="checkbox"  value="news" name="features"cheked>
+          <label>Новости</label>
+        </li>
+        <li>
+          <input type="checkbox"  value="galery" name="features">
+          <label>Галерея</label>
+        </li>
+        <li>
+          <input type="checkbox"  value="basket" name="features">
+          <label>Корзина</label>
+        </li>
+      </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </section>   
+    
+    <section>
+      <p>Сортировать:</p>
+      <ul>
+        <li><a>По цене</a></li>
+        <li><a>По типу</a></li>
+        <li><a>По названию</a></li>
+        <li><a>По направлению вверх</a></li>
+        <li><a>По направлению вниз</a></li>
+      </ul>
+    </section>
 
-        <ul>
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
-        </ul>
-      </section>
+    <section>
+      <h2>Товары</h2>
+      <ul>
+        <li>
+          <h3><a href="#">Sedona</a</h3>
+          <p>Информационный сайт для туристов</p>
+          <a href="#">9 900 ₽</a>
+          <img src="img/catalog/SEDONA.png" alt="Скриншот сайта для туристов Sedona">
+        </li>
+        <li>
+          <h3><a href="#">Pink App</a</h3>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="#">9 900 ₽</a>
+          <img src="img/catalog/Pink.png" alt="Скриншот продуктового лендинга Pink App">
+        </li>
+        <li>
+          <h3><a href="#">Barbershop Borodinski</a</h3>
+          <p>Сайт салона красоты. Для мужчин, да.</p>
+          <a href="#">9 900 ₽</a>
+          <img src="img/catalog/BORODINSKI.png" alt="Скриншот сайта барбершопа Borodinski">
+        </li>
+        <li>
+          <h3><a href="#">MISHKA</a</h3>
+          <p>Интернет-магазин вязаных игрушек</p>
+          <a href="#">9 900 ₽</a>
+          <img src="img/catalog/Mishka.png" alt="Скриншот интернет-магазина вязаных игрушек MISHKA">
+        </li>
+        <li>
+          <h3><a href="#">A Plus</a</h3>
+          <p>Лендинг курсов повышения квалификации</p>
+          <a href="#">9 900 ₽</a>
+          <img src="img/catalog/A Plus.png" alt="Скриншот лендинга повышения квалификации A Plus">
+        </li>
+        <li>
+          <h3><a href="#">КВАСТ</a</h3>
+          <p>Промо-сайт производителя крафтового кваса</p>
+          <a href="#">9 900 ₽</a>
+          <img src="img/catalog/КВАСТ.png" alt="Скриншот промо-сайта крафтового кваса КВАСТ">
+        </li>
+      </ul>
 
-      <section>
-        <h2>Контакты</h2>
-        <p>наб. Реки Карповки,<br>
-          5 лит П, Санкт-Петербург</p>
-        <a href="let:+7 800 555-86-28">+7 800 555-86-28</a>
-        <a href="">Напишите нам</a>
-      </section>
+      <ul>
+        <li><a>1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Следующая</a></li>
+      </ul>
+    </section>
 
-      <footer>
-        <ul>
-          <li>
-            <a href="#">vk</a>
-            <a href="#">fb</a>
-            <a href="#">instagram</a>
-          </li>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </ul> 
-      </footer>
+    <section>
+      <h2>Контакты</h2>
+      <p>наб. Реки Карповки,<br>
+        5 лит П, Санкт-Петербург</p>
+      <a href="let:+7 800 555-86-28">+7 800 555-86-28</a>
+      <a href="">Напишите нам</a>
+    </section>
 
-    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">vk</a>
+          <a href="#">fb</a>
+          <a href="#">instagram</a>
+        </li>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </ul> 
+    </footer>
+
+  </main>
